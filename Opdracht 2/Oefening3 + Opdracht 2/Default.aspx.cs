@@ -39,6 +39,7 @@ public partial class _Default : System.Web.UI.Page
 
     protected void rbBeslist_SelectedIndexChanged(object sender, EventArgs e)
     {
+        // Er wordt gecheckt welke knop er is gekozen en daarmee wordt de panel gezien.
         if (rbBeslist.SelectedValue == "1")
         {
             pnlopdracht.Visible = true;

@@ -8,9 +8,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-                       <asp:panel ID="pnlopdracht" runat="server" Visible="false" >
+        <asp:Panel ID="pnlopdracht" runat="server" Visible="false">
             <div>
-                <h1>    Wie ben je?</h1>
+                <h1>Wie ben je?</h1>
                 Vul de onderstaande vragen.
             </div>
             <table class="auto-style2">
@@ -56,11 +56,11 @@
                 </tr>
             </table>
             <br>
-        </asp:panel>
-<asp:RadioButtonList ID="rbBeslist" runat="server" OnSelectedIndexChanged="rbBeslist_SelectedIndexChanged" RepeatDirection="Vertical" AutoPostBack="True">
-                        <asp:ListItem Value="1">Laat formulier zien</asp:ListItem>
-                        <asp:ListItem Value="2">Verberg formulier</asp:ListItem>
-                    </asp:RadioButtonList>
+        </asp:Panel>
+        <asp:RadioButtonList ID="rbBeslist" runat="server" OnSelectedIndexChanged="rbBeslist_SelectedIndexChanged" RepeatDirection="Vertical" AutoPostBack="True">
+            <asp:ListItem Value="1">Laat formulier zien</asp:ListItem>
+            <asp:ListItem Value="2">Verberg formulier</asp:ListItem>
+        </asp:RadioButtonList>
     </form>
 </body>
 </html>
