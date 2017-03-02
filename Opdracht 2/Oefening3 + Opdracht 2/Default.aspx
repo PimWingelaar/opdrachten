@@ -7,7 +7,7 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="frmopdracht" runat="server">
         <asp:Panel ID="pnlopdracht" runat="server" Visible="false">
             <div>
                 <h1>Wie ben je?</h1>

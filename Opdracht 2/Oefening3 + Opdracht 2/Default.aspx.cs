@@ -44,7 +44,7 @@ public partial class _Default : System.Web.UI.Page
         {
             pnlopdracht.Visible = true;
         }
-        if (rbBeslist.SelectedValue == "2")
+        else
         {
             pnlopdracht.Visible = false;
         }
