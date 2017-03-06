@@ -1,10 +1,29 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Opdracht 3.aspx.cs" Inherits="Opdracht_3" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Opdracht 4.aspx.cs" Inherits="Opdracht_4" %>
 
 <!DOCTYPE html>
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+</script>
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            color: #FF0000;
+        }
+        .auto-style2 {
+            width: 350px;
+        }
+        #countdown {
+            background-color: grey;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -20,7 +39,7 @@
             <TodayDayStyle BackColor="#99CCCC" ForeColor="White" />
             <WeekendDayStyle BackColor="#CCCCFF" />
         </asp:Calendar>
-        <br />
+        <br />  
         U heeft de onderstaande datum geselecteerd:<br />
         <br />
         <asp:Label ID="lbDatum" ForeColor ="#5882FA" runat="server" Text="1-1-1995"></asp:Label>
@@ -32,7 +51,38 @@
         <br />
         <br />
         <asp:Button ID="btnLeeftijd" runat="server" OnClick="btnLeeftijd_Click" Text="Bereken leeftijd" />
+        <br />
     </div>
-    </form>
-</body>
+    <br />
+    <div id="countdown">
+        <h1 class="auto-style1">Het aftellen is begonnen</h1>
+        <p>Het is vandaag:</p>
+        <asp:Literal ID="litVandaag" runat="server" OnLoad="litVandaag_Load"></asp:Literal>
+        <br />
+        <br />
+        Het is nu:<br />
+        <br />
+        <asp:Literal ID="litTijd" runat="server" OnLoad="litTijd_Load"></asp:Literal>
+        <br />
+        <br />
+        <h2>Waarneer is het Pasen?</h2>
+        <table class="auto-style2">
+            <tr>
+                <td>Het duurt nog</td>
+                <td></td>
+            </tr>
+            <tr id="3">
+                <td>&nbsp;</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td></td>
+            </tr>
+        </table>
+        <br />
+        <asp:Button ID="btnVervers" runat="server" Text="Verversen" OnClick="btnVervers_Click"/>
+        </div>
+       </form>
+    </body>
 </html>

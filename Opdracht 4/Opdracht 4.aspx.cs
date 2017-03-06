@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Opdracht_3 : System.Web.UI.Page
+public partial class Opdracht_4 : System.Web.UI.Page
 {
     protected void SelectionChanged(object sender, EventArgs e)
     {
@@ -27,5 +27,23 @@ public partial class Opdracht_3 : System.Web.UI.Page
         int age = now.Year - bday;
         //Zet de int terug naar een string en zet de tekst in de label lbLeeftijd.
         lbLeeftijd.Text = age.ToString();
+    }
+
+    protected void litVandaag_Load(object sender, EventArgs e)
+    {
+        DateTime ezel = DateTime.Today;
+        litVandaag.Text = ezel.ToShortDateString();
+    }
+
+    protected void litTijd_Load(object sender, EventArgs e)
+    {
+        DateTime tijd = DateTime.UtcNow.AddHours(1);
+        litTijd.Text = tijd.ToShortTimeString();
+    }
+
+    protected void btnVervers_Click(object sender, EventArgs e)
+    {
+        DateTime endtime = new DateTime(2017, 12, 04);
+        DateTime nowtime = DateTime.Now;
     }
 }
