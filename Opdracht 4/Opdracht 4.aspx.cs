@@ -43,7 +43,16 @@ public partial class Opdracht_4 : System.Web.UI.Page
 
     protected void btnVervers_Click(object sender, EventArgs e)
     {
-        DateTime endtime = new DateTime(2017, 12, 04);
-        DateTime nowtime = DateTime.Now;
+        DateTime daysLeft = DateTime.Parse("12/04/2017 12:00:01 AM");
+        DateTime startDate = DateTime.Now;
+        TimeSpan t = daysLeft - startDate;
+
+        double uren = t.Days;
+        double uren1 = uren * 24;
+        double minuten = t.Minutes;
+        double seconden = t.Seconds;
+        LitUren.Text = Convert.ToString(uren1);
+        LitMinuten.Text = Convert.ToString(minuten);
+        litSeconden.Text = Convert.ToString(seconden);
     }
 }

@@ -69,15 +69,21 @@
         <table class="auto-style2">
             <tr>
                 <td>Het duurt nog</td>
-                <td></td>
+                <td>
+                    <asp:Literal ID="LitUren" runat="server"></asp:Literal>
+                &nbsp;Uren</td>
             </tr>
             <tr id="3">
                 <td>&nbsp;</td>
-                <td></td>
+                <td>
+                    <asp:Literal ID="LitMinuten" runat="server"></asp:Literal>
+                &nbsp;Minuten</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td></td>
+                <td>
+                    <asp:Literal ID="litSeconden" runat="server"></asp:Literal>
+                &nbsp;Seconden</td>
             </tr>
         </table>
         <br />

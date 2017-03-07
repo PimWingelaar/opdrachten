@@ -1,6 +1,9 @@
 # opdrachten
 Opdrachten van vakBack
 
+7-3-2017
+Ik heb de countdown van opdracht 4 afgemaakt en heb gister nog opdracht 3 laten nakijken en opdracht 4 vandaag nagekijken met rens.
+
 6-3-2017
 Ik heb opdracht 4 geupload naar GitHub maar heb de countdown nog niet af, er zijn ook wat veranderingen met opdracht 3.
 
