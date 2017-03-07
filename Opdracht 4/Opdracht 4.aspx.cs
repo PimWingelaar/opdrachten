@@ -48,7 +48,7 @@ public partial class Opdracht_4 : System.Web.UI.Page
         TimeSpan t = daysLeft - startDate;
 
         double uren = t.Days;
-        double uren1 = uren * 24;
+        double uren1 = uren * 24 + t.Hours;
         double minuten = t.Minutes;
         double seconden = t.Seconds;
         LitUren.Text = Convert.ToString(uren1);
