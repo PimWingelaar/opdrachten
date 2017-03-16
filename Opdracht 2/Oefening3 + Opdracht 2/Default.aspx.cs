@@ -24,9 +24,7 @@ public partial class _Default : System.Web.UI.Page
         if (chkHobby.SelectedValue == "1")
         {
             Hobby += "Gamen ";
-        }
-        if (chkHobby.SelectedValue == "2")
-        {
+        } else {
             Hobby += "Programmeren ";
         }
         // Hier wordt de infomatie geschreven die je hebt ingevoerd.
@@ -43,9 +41,7 @@ public partial class _Default : System.Web.UI.Page
         if (rbBeslist.SelectedValue == "1")
         {
             pnlopdracht.Visible = true;
-        }
-        else
-        {
+        } else {
             pnlopdracht.Visible = false;
         }
     }
