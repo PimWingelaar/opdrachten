@@ -1,6 +1,9 @@
 # opdrachten
 Opdrachten van vakBack
 
+12-4-2017
+Ik heb opdracht 6 en 7 laten nakijken en 7 toegevoegt in github.
+
 20-3-2017
 Heb opdracht 6 ingeleverd op github maar heb hem nog nog niet laten nakijken.
 
