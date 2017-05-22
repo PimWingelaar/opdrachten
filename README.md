@@ -1,6 +1,9 @@
 # opdrachten
 Opdrachten van vakBack
 
+22-5-2017
+Ik heb opdracht 8 afgemaakt en laten zien aan de docent.
+
 12-4-2017
 Ik heb opdracht 6 en 7 laten nakijken en 7 toegevoegt in github.
 

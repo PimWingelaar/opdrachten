@@ -47,7 +47,7 @@ public partial class _Default : System.Web.UI.Page
 
     private void processDate(int cijfer, int x, Label label, TextBox field)
     {
-        if (cijfer * x == Int32.Parse(field.Text))
+        if (cijfer * x == Int32.Parse(field.Text))  
         {
             label.Text = "Goed";
             field.ReadOnly = true;
